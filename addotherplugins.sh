@@ -5,4 +5,4 @@ wget https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/check-
 wget https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/check-base/check_iops.sh && 
 wget https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/check-base/check_mem.sh && 
 wget https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/check-base/check_netint.pl && 
-wget https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/check-base/check_users_ip.pl &&
+wget https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/check-base/check_users_ip.pl
