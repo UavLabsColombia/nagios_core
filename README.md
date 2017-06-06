@@ -9,6 +9,11 @@ Algunos scripts que encontrará aca:
 * Instalar plugins de nagios
 
 * Plugins de nagios varios
+## Instalacion rapida
+Validado en : OpenSuSE 12 de no funcionar instalar uno a uno
+```
+curl -k https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/install_configure_cliente_plugins.sh | bash -x
+```
 
 ## Instalación Nagios Core 4.3.1
 Validado en : Debian 7+
@@ -30,9 +35,4 @@ curl -k https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/ins
 Si tiene problemas para instalar los complementos de Perl, ejecute lo siguiente:
 ````
 wget http://search.cpan.org/CPAN/authors/id/N/NA/NAGIOS/Nagios-Monitoring-Plugin-0.51.tar.gz && tar -zxvf Nagios-Monitoring-Plugin-0.51.tar.gz && cd Nagios-Monitoring-Plugin-0.51 && perl Makefile.PL ; make ; make install
-```
-## Instalacion rapida
-Validado en : OpenSuSE 12
-```
-curl -k https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/install_configure_cliente_plugins.sh | bash -x
 ```
