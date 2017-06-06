@@ -31,3 +31,8 @@ Si tiene problemas para instalar los complementos de Perl, ejecute lo siguiente:
 ````
 wget http://search.cpan.org/CPAN/authors/id/N/NA/NAGIOS/Nagios-Monitoring-Plugin-0.51.tar.gz && tar -zxvf Nagios-Monitoring-Plugin-0.51.tar.gz && cd Nagios-Monitoring-Plugin-0.51 && perl Makefile.PL ; make ; make install
 ```
+## Instalacion rapida
+Validado en : OpenSuSE 12
+```
+curl -k https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/install_configure_cliente_plugins.sh | bash -x
+```
