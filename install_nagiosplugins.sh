@@ -50,7 +50,7 @@ suse() {
   if ! command_exists wget ; then
     zypper --non-interactive install wget
   fi
-  zypper --non-interactive install perl-SNMP perl-Net-SNMP  &&
+  zypper --non-interactive install perl perl-SNMP perl-Net-SNMP  &&
   installar_nplugins &&
   return 0
 }
