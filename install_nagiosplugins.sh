@@ -17,6 +17,8 @@ linux_variant() {
     distro="debian"
   elif [ -f "/etc/redhat-release" ]; then
     distro="rh"
+  elif [ -f "/etc/SuSE-release" ]; then
+    distro="suse"
   else
     distro="unknown"
   fi
@@ -40,6 +42,15 @@ rh() {
     yum install wget -y
   fi
   yum install -y perl perl-CPAN net-snmp-perl &&
+  installar_nplugins &&
+  return 0
+}
+
+suse() {
+  if ! command_exists wget ; then
+    zypper --non-interactive install wget
+  fi
+  zypper --non-interactive install perl-SNMP perl-Net-SNMP  &&
   installar_nplugins &&
   return 0
 }
