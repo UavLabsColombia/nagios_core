@@ -10,7 +10,7 @@ Algunos scripts que encontrará aca:
 
 * Plugins de nagios varios
 ## Instalacion rapida
-Validado en : OpenSuSE 12 de no funcionar instalar uno a uno
+Validado en : OpenSuSE 12  Ubuntu 16.04, de no funcionar instalar uno a uno
 ```
 curl -k https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/install_configure_cliente_plugins.sh | bash -x
 ```
