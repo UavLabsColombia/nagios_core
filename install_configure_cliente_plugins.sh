@@ -43,3 +43,31 @@ fi
 echo "Es necesario agregar la ip del servidor Nagios Core para que acepte las peticiones sobre /opt/nagios/etc/nrpe.cfg en la variabla allowed_hosts... "
 sleep 1
 exit
+
+# Si se generan errores sobre los check ifacenet
+# chmod 1777 /tmp
+
+## instalacion SNMP
+# Tener instalado net-snmp, net-snmp-utils, systat y bc
+# Configurar
+# echo rocommunity comunudad ip_server >>/etc/snmp/snmpd.conf
+## /etc/init.d/snmpd restart
+#se verifica si el servicio está configurado para el inicio
+# chkconfig --list snmpd
+# snmpd           0:off 1:off 2:off 3:off 4:off 5:off 6:off
+#
+# se agrega el servicio snmp al inicio
+# # chkconfig snmpd on
+#
+# y se confirma nuevamente
+# # chkconfig --list snmpd
+# snmpd           0:off 1:off 2:on 3:on 4:on 5:on 6:off
+
+# Ver reglas iptables -L -nv
+# Reglas de ip tables para snmp y nrpe
+# iptables -I INPUT 1 -m state --state NEW -m tcp -p tcp --dport 5666 -j ACCEPT
+# iptables -I INPUT 2 -m state --state NEW -m udp -p udp --dport 161 -j ACCEPT
+#
+# service iptables save
+#
+# service iptables restart
