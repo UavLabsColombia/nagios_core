@@ -68,6 +68,7 @@ exit
 # iptables -I INPUT 1 -m state --state NEW -m tcp -p tcp --dport 5666 -j ACCEPT
 # iptables -I INPUT 2 -m state --state NEW -m udp -p udp --dport 161 -j ACCEPT
 #
+#sobre Redhat 7  o posiblemente Centos 7    instalar iptables-services para poder usar el siguiente comando por si da error en la ejecucion
 # service iptables save
 #
 # service iptables restart
