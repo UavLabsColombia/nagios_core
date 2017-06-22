@@ -2,6 +2,8 @@
 
 Algunos scripts que encontrará aca:
 
+* Instalacion rapida
+
 * Instalar Nagios Core
 
 * Instalar Cliente NRPE
@@ -9,8 +11,9 @@ Algunos scripts que encontrará aca:
 * Instalar plugins de nagios
 
 * Plugins de nagios varios
+
 ## Instalacion rapida
-Validado en : OpenSuSE 12  Ubuntu 16.04, de no funcionar instalar uno a uno
+Validado en : OpenSuSE 12  Ubuntu 16.04
 ```
 curl -k https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/install_configure_cliente_plugins.sh | bash -x
 ```
