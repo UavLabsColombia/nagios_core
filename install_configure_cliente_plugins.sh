@@ -6,9 +6,9 @@ echo "Instalando NRPE..."
 sleep 1
 curl -k https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/install_nrpe.sh | bash -x &&
 
-# echo "instalando dependencias"
-# sleep 1
-# zypper --non-interactive install sysstat
+echo "instalando dependencias"
+sleep 1
+zypper --non-interactive install sysstat
 
 echo "Instalando los plugins de nagios"
 sleep 1
