@@ -13,7 +13,7 @@ Algunos scripts que encontrará aca:
 * Plugins de nagios varios
 
 ## Instalacion rapida
-Validado en : OpenSuSE 12  Ubuntu 16.04
+Validado en : OpenSuSE 12  Ubuntu 16.04 Centos 7
 ```
 curl -k https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/install_configure_cliente_plugins.sh | bash -x
 ```
@@ -24,7 +24,7 @@ Validado en : Debian 7+
 curl -k https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/install_nagios.sh | sh -x
 ```
 
-## Instalación cliente NRPE 3.1.0
+## Instalación cliente NRPE 3.2.0
 Validado en : Debian 6+, Ubuntu 16+, Centos 6+, OpenSuSE 12
 ```
 curl -k https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/install_nrpe.sh | bash -x
