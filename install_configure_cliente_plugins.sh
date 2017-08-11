@@ -8,7 +8,7 @@ curl -k https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/ins
 
 echo "instalando dependencias"
 sleep 1
-zypper --non-interactive install sysstat
+#zypper --non-interactive install sysstat
 
 echo "Instalando los plugins de nagios"
 sleep 1
