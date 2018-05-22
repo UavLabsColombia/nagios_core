@@ -49,7 +49,7 @@ fi
 
 function one_disk {
     disk=$1
-    iops=`/usr/bin/iostat -d /dev/$disk -t 2 2 | grep -n $disk | grep 9:$disk | awk '{print $2}'`
+    iops=`/usr/bin/iostat -d /dev/$disk -t 2 2 | grep -n $disk | grep 9:$disk | awk '{print $2}' | sed s/,/./g`
     
     if [ $(bc <<< "$iops >= $critical") -ne 0 ];
     	then
