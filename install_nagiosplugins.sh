@@ -8,7 +8,7 @@
 # Validado en : Debian 6+, Ubuntu 16+, Centos 6+
 #
 
-NPLUGINS_version="2.1.4"
+NPLUGINS_version="2.2.1"
 INSTALL_PATH="/tmp/nagios_`date +%Y%m%d%H%M%S`"
 NAGIOS_USER="nagios"
 
