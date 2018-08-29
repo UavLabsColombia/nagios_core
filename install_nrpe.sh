@@ -10,7 +10,7 @@
 #
 
 
-NRPE_version="3.2.0"
+NRPE_version="3.2.1"
 TEMP_PATH="/tmp/nagios_`date +%Y%m%d%H%M%S`"
 INSTALL_PATH="/opt/nagios"
 NAGIOS_USER="nagios"
