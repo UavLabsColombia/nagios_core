@@ -18,7 +18,7 @@ Validado en : OpenSuSE 12  Ubuntu 16.04 Centos 7
 curl -k https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/install_configure_cliente_plugins.sh | bash -x
 ```
 
-## Instalación Nagios Core 4.3.1
+## Instalación Nagios Core 4.4.3
 Validado en : Debian 7+
 ```
 curl -k https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/install_nagios.sh | sh -x
