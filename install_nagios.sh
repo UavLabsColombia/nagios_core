@@ -10,7 +10,7 @@
 #
 
 NRPE_version="3.1.0"
-nagioscore_version="4.3.1"
+nagioscore_version="4.4.3"
 pnp4nagios_version="0.6.26"
 
 temp_path="/temp/nagios_`date +%Y%m%d%H%M%S`"
