@@ -41,6 +41,9 @@ else
     cd /opt/nagios/lib/ && mkdir other && cd other && wget https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/check-base/check_await.sh && wget https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/check-base/check_cpu.sh && wget https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/check-base/check_iops.sh && wget https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/check-base/check_mem.sh && wget https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/check-base/check_netint.pl && wget https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/check-base/check_users_ip.pl && wget https://raw.githubusercontent.com/UavLabsColombia/nagios_core/master/check-base/check_mem.py && chmod +x * && chown nagios:nagios *
 fi
 
+echo "Agregando Regla a Iptables"
+iptables -I INPUT 1 -m state --state NEW -m tcp -p tcp --dport 5666 -j ACCEPT
+
 echo "Es necesario agregar la ip del servidor Nagios Core para que acepte las peticiones sobre /opt/nagios/etc/nrpe.cfg en la variabla allowed_hosts... "
 sleep 1
 exit
